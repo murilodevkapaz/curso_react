@@ -1,0 +1,6 @@
+.input{
+    font-size: 1.4rem;
+}
+.input input:read-only{
+    background-color: gray;
+}

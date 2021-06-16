@@ -1,0 +1,7 @@
+.button-styled {
+    padding: 10px;
+    background-color: #eaea00;
+    /* box-shadow: inset -1px 0px 10px #ffffff; */
+    box-shadow: 3px 5px 10px #79981b;
+    border: 1px solid #a0a018;
+}

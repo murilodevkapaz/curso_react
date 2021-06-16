@@ -1,0 +1,23 @@
+
+td, th{
+    padding: 5px 10px;
+    border: 1px solid #fff;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: 3px solid gray;
+    padding: 5px;
+}
+
+tr th{
+    background-color: #e5a2fb;
+}
+
+tr:nth-child(2n){
+    background-color: #d0d0d0;
+}
+tr:nth-child(2n+1):not(tr th){
+    background-color: #b1adbf;
+}
