@@ -3,6 +3,7 @@ import './Button.css';
 
 export default props =>
     <button 
+        //evento {dentro props.nomeEvento}
         onClick={e => props.click && props.click(props.label)}
         className={`
         button
