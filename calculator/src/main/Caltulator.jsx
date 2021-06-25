@@ -83,6 +83,16 @@ export default class Calculator extends Component {
         }
     }
 
+    backspace() {
+        const i = this.state.current;
+        const digit = this.state.values[i].toString();
+        const values = [...this.state.values];
+        const res = isNaN(parseInt(digit.substr(0, digit.length - 1))) ? 0 : parseInt(digit.substr(0, digit.length - 1));
+        values[i] = res;
+        const displayValue = res.toString();
+        this.setState({ values, displayValue });
+    }
+
     detectKeyDigited(e) {
         let keyVal;
         if (e.key === "Enter") keyVal = "=";
@@ -113,14 +123,7 @@ export default class Calculator extends Component {
                 this.setOperation(keyVal);
                 break;
             case "Backspace":
-                debugger;
-                const i = this.state.current;
-                const digit = this.state.values[i].toString();
-                const values = [...this.state.values];
-                const res = isNaN(parseInt(digit.substr(0, digit.length-1)))? 0 : parseInt(digit.substr(0, digit.length-1));
-                values[i] = res;
-                const displayValue = res.toString();
-                this.setState({values, displayValue});
+                this.backspace();
                 break;
         }
     }

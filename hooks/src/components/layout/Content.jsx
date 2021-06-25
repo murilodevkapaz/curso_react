@@ -11,6 +11,7 @@ import UseCallback from '../../views/examples/UseCallback'
 import UseMemo from '../../views/examples/UseMemo'
 import UseContext from '../../views/examples/UseContext'
 import UseReducer from '../../views/examples/UseReducer'
+import UseReducerExercise from '../../views/examples/UseReducerExercise'
 import UseCustom from '../../views/examples/UseCustom'
 
 const Content = props => (
@@ -39,6 +40,9 @@ const Content = props => (
             </Route>
             <Route path="/useReducer">
                 <UseReducer />
+            </Route>
+            <Route path="/useReducerExercise">
+                <UseReducerExercise />
             </Route>
             <Route path="/useCustom">
                 <UseCustom />
