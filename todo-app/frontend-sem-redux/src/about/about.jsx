@@ -13,3 +13,5 @@ export default props => (
         <p>Lorem ipsum dolor sit amet...</p>
     </div>
 )
+
+// export default React.memo(PageHeader);
