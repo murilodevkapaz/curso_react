@@ -7,6 +7,7 @@ import './App.css';
 
 
 export default props => {
+
     return (
         <div className="App">
             <h1>Exercise React-Redux (Simple)</h1>
